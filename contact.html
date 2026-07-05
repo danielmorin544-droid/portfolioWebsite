@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Daniel Morin</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-device"><span class="screen-dot"></span></span>
+      <span class="brand-name">danielMorin.APP</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">MENU</button>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section>
+  <div class="wrap" style="max-width: 640px;">
+    <div class="section-head">
+      <p class="eyebrow">Terminal</p>
+      <h1>Get in Touch</h1>
+      <p>Send a message through the console below, or connect through one of the ports.</p>
+    </div>
+
+    <form class = "terminal-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="1a00068b-7526-40a6-8687-fd9d785f72d1">
+      <div class="field">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Doe" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" autocomplete="email">
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Let's talk about..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="contact-ports">
+      <a href="danielmorin544@gmail.com" class="port-link">✉ Email</a>
+      <a href="#" class="port-link">🔗 LinkedIn</a>
+      <a href="#" class="port-link">🐙 GitHub</a>
+    </div>
+    <br>
+    <p><i>LinkedIn and Github are a work in progress</i></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Daniel Morin</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
